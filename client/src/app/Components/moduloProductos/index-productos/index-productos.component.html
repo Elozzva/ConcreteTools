@@ -1,0 +1,84 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container justify-content-md-center">
+      <br>
+      <br>
+      <br>
+      <h1 class="display-4">Productos</h1>
+      <p class="lead">Gestión de productos</p>
+      <button type="button" (click)="newProducto()" class="btn btn-success float-right" data-toggle="modal" data-target="#exampleModalCenter">
+        Crear Producto
+      </button>
+      <!-- <button type="button" (click)="newProducto()" class="btn btn-success float-right">Nuevo</button> -->
+    </div>
+</div>
+<div class="container ">
+    <div class="form-group col-md-4  float-right">
+      <input type="text" class="form-control" name="inputSearch" #inputSearch aria-describedby="helpId" (keyup)="search(inputSearch.value)" placeholder="Búsqueda">
+    </div>
+    <div class=" container overflow-auto" style="height: 650px;">
+      <div class="row  justify-content-md-center">
+          <table class="table table-hover" data-sticky-header="true">
+              <thead class="thead-dark" >
+                <tr >
+                  <th scope="col">Orden</th>
+                  <th scope="col">Clave</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Descripción</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Operaciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <ng-container *ngIf="!isSearching">
+                    <ng-container  *ngFor="let producto of Productos">
+                        <tr>
+                          <th> {{ producto.Orden }} </th>
+                          <th scope="row"> {{ producto.Clave }} </th>
+                          <td>{{ producto.Nombre }}</td>
+                          <td>{{ producto.Descripcion }}</td>
+                          <td>{{ producto.Precio }}</td>
+                          <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <ng-container *ngIf="producto._id">
+                                  <button type="button" (click)="edit(producto._id)" class="btn btn-primary">Editar</button>
+                                  <button type="button" (click)="delete(producto._id)" class="btn btn-danger">Eliminar</button>
+                              </ng-container>
+                            </div>
+                        </td>
+                        </tr>
+                    </ng-container>
+
+                  </ng-container>
+
+                  <ng-container *ngIf="isSearching">
+                    <ng-container  *ngFor="let producto of ProductosFiltered">
+                        <tr>
+                          <th> {{ producto.Orden }} </th>
+                          <th scope="row"> {{ producto.Clave }} </th>
+                          <td>{{ producto.Nombre }}</td>
+                          <td>{{ producto.Descripcion }}</td>
+                          <td>{{ producto.Precio }}</td>
+                          <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                              <ng-container *ngIf="producto._id">
+                                  <button type="button" (click)="edit(producto._id)" class="btn btn-primary">Editar</button>
+                                  <button type="button" (click)="delete(producto._id)" class="btn btn-danger">Eliminar</button>
+                              </ng-container>
+                            </div>
+                        </td>
+                        </tr>
+                    </ng-container>
+
+                  </ng-container>
+              </tbody>
+          </table>
+      </div>
+
+    </div>
+</div>
+<app-modal-delete *ngIf="openModalDeleteBool"
+  [updateAll]="getProductos"
+  [openDeleteModal]="openModalDelete"
+  [objToDelete]="productoToDelete"
+  [url]="URL"
+></app-modal-delete>

@@ -1,0 +1,82 @@
+<div class="hero-wrap " style="background-image: url('../../../../assets/images/banner_inicio.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text  align-items-center justify-content-start" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate">
+
+          <h2 class="subheading">Leave the house cleaning chores to us</h2>
+          <h1 class="mb-4">Let us do the dirty work, so you don't have to.</h1>
+          <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Learn more <span class="ion-ios-arrow-forward"></span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+<ng-container *ngIf="Producto">
+  <div class="row mx-auto mt-9">
+    <div class="col-md-5 offset-md-1">
+      <a href="productos">
+        <button class="btn btn-secondary">Volver</button>
+      </a>
+        <div class="imagen-producto text-dark mb-7">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{{ 'assets/Productos/'+ Producto.Clave +'.jpg' }}" class="rounded" style="width:80%" alt="{{ Producto.Nombre }}">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class="tarjeta-producto">
+        <div class="card-header text-dark mayusculas">
+          <h2> {{ Producto.Nombre}} </h2>
+        </div>
+      </div>
+      <br>
+      <div class="tarjeta-producto">
+        <div class="contorno">
+          <h2>Clave: {{ Producto.Clave}} </h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item font-weight-bold">Descripción</li>
+            <li class="list-group-item" *ngFor="let item of Producto.Descripcion"> {{ item }}</li>
+          </ul>
+        </div>
+        <hr>
+        <br>
+        <div class="precio">
+          <h1 class="font-weight-bold">Precio:   {{ Producto.Precio  | currency : 'MXN' : 'symbol-narrow' : '1.2-2'}} MX </h1>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item font-weight-bold">Aplicaciones</li>
+          <li class="list-group-item" *ngFor="let item of Producto.Aplicaciones"> {{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="!Producto">
+  <div class="row mx-auto">
+    <div class="col-md-5 offset-md-1">
+      <a href="productos">
+        <button class="btn btn-secondary">Volver</button>
+      </a>
+        <div class="imagen-producto text-dark mb-7">
+          <div class="card-body">
+            <div class="text-center">
+              <img src="{{ 'assets/images/notFound.jpg' }}" class="rounded" style="width:800px" alt="{{ Producto.Nombre }}">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+      <div class="tarjeta-producto">
+        <div class="card-header text-dark mayusculas">
+          <h1> Producto no encontrado  </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<br>
+<br>
+

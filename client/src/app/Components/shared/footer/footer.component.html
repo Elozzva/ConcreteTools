@@ -1,0 +1,53 @@
+<footer class="footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <h2 class="footer-heading" (click)="closeLogin()">ConcreteTools</h2>
+          <p>Concrete Tools ingresa al mercado mexicano hace {{ antiguedad }} años,
+            siendo proveedores de herramientas especiales de alta calidad
+            para trabajar el concreto. Dando soluciones a las necesidades de la
+            industria de la construcción. Estamos participando en el cambio
+            y aportando a la cultura de lo bien hecho.</p>
+
+        </div>
+        <div class="col-md-6 col-lg-4 pl-lg-5 mb-1 mb-md-0">
+          <h2 class="footer-heading">Acceso Rápido</h2>
+          <ul class="list-unstyled">
+            <li><a href="home" class="py-1 d-block">Inicio</a></li>
+            <li><a href="about" class="py-1 d-block">Nosotros</a></li>
+          </ul>
+          <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+            <li><a target="_blank" href="https://www.facebook.com/concretetoolsmx/"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="#"><span class="fa fa-whatsapp"></span></a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-1 mb-md-0">
+          <h2 class="footer-heading">Contacto</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon fa fa-map-marker"></span><span class="text">San Agustín Tlaxiaca, Barrio Fresno.</span></li>
+              <li><span class="icon fa fa-phone"></span><span class="text">Oficina: +52 743-791-4605</span></li>
+              <li><span class="icon fa fa-phone-square"></span><span class="text">Celular: +52 771-279-5002</span></li>
+              <li><span class="icon fa fa-envelope"></span><span class="text">concretetools@hotmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-12 text-center">
+
+          <p class="copyright">
+            Copyright &copy; 
+            {{ anio }} 
+            All rights reserved | Hecho 
+            <i class="fa fa-heart" aria-hidden="true"></i> por 
+            <a href="https://colorlib.com" target="_blank">C. Castro / O. López.</a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <app-login 
+  [closeModal]="closeLogin">
+  </app-login>

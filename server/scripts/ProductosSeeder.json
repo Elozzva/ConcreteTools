@@ -1,0 +1,141 @@
+[{
+"Nombre" : "Flota de Acero Alta Resistencia",
+"Clave" : "FLA-120",
+"Descripcion" : ["48 pulgadas de longitud","6 pulgadas de ancho","Incluye cabezal adaptador sistema reversible"],
+"Precio": 999.99,
+"Aplicaciones":["Diseñada especialmente para trabajar concreto en grandes superficies.","Alisa y empereja el concreto","Baja o sume el agregado grueso (grava) dando como resultado que en la superficie quede el mortero (arena-cemento)."]
+},{  
+"Nombre" : "Flota de aluminio Magnecio GOLDEN LINE PROFESIONAL",
+"Clave" : "FLAL-120",
+"Descripcion" : ["48 pulgadas de longitud","8 pulgadas de ancho","Incluye cabezal adaptador sistema reversible"],
+"Precio": 999.99,
+"Aplicaciones":["Diseñada especialmente para trabajar concreto en grandes superficies.","Alisa y empereja el concreto","Baja o sume el agregado grueso (grava) dando como resultado que en la superficie quede el mortero (arena-cemento)."]
+}, {
+  
+"Nombre" : "Peine Texturizador para Concreto 48''",
+"Clave" : "TEXT-120",
+"Descripcion" : ["48 pulgadas de longitud","Separación 3/4 de pulgada","Rayadores fabricados en acero al alto carbón","Incluye base y adaptador para extensión","Fabricado en aluminio anodizado"],
+"Precio": 999.99,
+"Aplicaciones":["Empleado en calles, autopistas, banquetas, etc.","Deja una textura antiderrapante homogénea.","Exigido para realizar obra pública en todo el país."]
+
+}, {
+  
+"Nombre" : "Peine Texturizador para Concreto 60''",
+"Clave" : "TEXT-150",
+"Descripcion" : ["60 pulgadas (1.50m) de longitud","Separación 3/4 de pulgada","Rayadores fabricados en acero al alto carbón","Incluye base y adaptador para extensión","Fabricado en aluminio anodizado"],
+"Precio": 999.99,
+"Aplicaciones":["Empleado en calles, autopistas, banquetas, etc.","Deja una textura antiderrapante homogénea.","Exigido para realizar obra pública en todo el país."]
+
+}, {
+  
+"Nombre" : "Llana Tipo Fresno 48'' BUILD IN BLUE STEEL",
+"Clave" : "LLACEA-120",
+"Descripcion" : ["48 pulgadas de longitud","5 pulgadas de ancho","Incluye cabezal adaptador sistema reversible","Fabricada en acero azul importado","Alta resistencia al desgaste y deformación"],
+"Precio": 999.99,
+"Aplicaciones":["Utilizada en pulidos de concreto y concreto estampado."]
+
+},{
+  
+"Nombre" : "Llana Tipo Fresno 36'' BUILD IN BLUE STEEL",
+"Clave" : "LLACEA-90",
+"Descripcion" : ["36 pulgadas de longitud","5 pulgadas de ancho","Incluye cabezal adaptador sistema reversible","Fabricada en acero azul importado","Alta resistencia al desgaste y deformación"],
+"Precio": 999.99,
+"Aplicaciones":["Utilizada en pulidos de concreto y concreto estampado."]
+
+},{
+  
+"Nombre" : "Llana Tipo BULL FLOAT 48''",
+"Clave" : "FLOBULL-1208",
+"Descripcion" : ["48 pulgadas de longitud","Fabricada en acero azul alta calidad","Incluye cabezal adaptador sistema reversible","Alta resistencia al desgaste"],
+"Precio": 999.99,
+"Aplicaciones":["Para acabado en pisos de concreto pulido y estampado.","Se puede emplear como flota para alisar y emparejar el concreto"]
+
+},{
+  
+"Nombre" : "Flota Ranurada para Concreto 36''",
+"Clave" : "FLORANU-90",
+"Descripcion" : ["36 pulgadas de longitud","Fabricada en acero azul alta resistencia","Incluye cabezal adaptador sistema reversible"],
+"Precio": 999.99,
+"Aplicaciones":["Diseñada para vialidades con pendiente.","Inclinaciones prolongadas o acceso a estacionamiento.","Deja una superficie con bordes redondeados, uniformes y profundos en el concreto."]
+
+},{
+  
+"Nombre" : "Flota Vialidad Antiderrapante 36''",
+"Clave" : "FLOVAN-120",
+"Descripcion" : ["36 pulgadas de longitud","Fabricada en acero inoxidable alta resistencia","Incluye cabezal adaptador sistema reversible"],
+"Precio": 999.99,
+"Aplicaciones":["Empleado en calles y autopistas.","Deja una textura antiderrapante de alta calidad haciendo cortes limpios.","No deja rebaba de concreto eliminando costos de limpieza.","Exigida en Estados Unidos por las normas de construcción."]
+
+},{
+  
+"Nombre" : "Flota Ranurada para Reductores de Velocidad",
+"Clave" : "FLORA-120",
+"Descripcion" : ["36 pulgadas de longitud","Fabricada en acero inoxidable alta resistencia","Incluye cabezal adaptador sistema reversible"],
+"Precio": 999.99,
+"Aplicaciones":["Empleado en calles y autopistas.","Deja una superficies con bordes redondeados, uniformes y profundos en el concreto.","No deja rebaba de concreto eliminando costos de limpieza."]
+
+},{
+  
+"Nombre" : "Jalador para Concreto",
+"Clave" : "JALCRET-1",
+"Descripcion" : ["Fabricada en acero alta resistencia","Dimensiones ergonómicas para evitar fatiga al usuario"],
+"Precio": 999.99,
+"Aplicaciones":["Utilizandocpara exparsir y dezplazar concreto.","Sustituye el uso de palas mejorando calidad y eficiencia del trabajo"]
+
+},{
+  
+"Nombre" : "Extensión o Mango de Aluminio",
+"Clave" : "EXTAL-180",
+"Descripcion" : ["Fabricado 100% aluminio","Longitud de 180 centímetros"],
+"Precio": 999.99,
+"Aplicaciones":["Se acopla en adaptadores (cabezal) de cualquier marca nacional o importada.","Ideal para el uso de flotas y llanas tipo fresno"]
+
+},{
+  
+"Nombre" : "Cabezal Adaptador",
+"Clave" : "CABAL-1",
+"Descripcion" : ["Fabricado en 100% aluminio","Sistema reversible tipo cadena"],
+"Precio": 999.99,
+"Aplicaciones":["Se adapta a flotas tipo bull, tipo canal, ranuradas, etc.","Se adapta a llanas tipo fresno","Se recomienda engrasar la parte movil giratoria para prolongar su vida útil."]
+
+},{
+  
+"Nombre" : "Cabezal Clevis",
+"Clave" : "ADAPCLEV-1",
+"Descripcion" : ["Fabricado en 100% aluminio"],
+"Precio": 999.99,
+"Aplicaciones":["Empleado para acoplar la extensión o mango.","Se usa en flotas tipo fresno, peine texturizador, flotas para concreto, orilladores de a pie, etc."]
+
+},{
+  
+"Nombre" : "Repuesto para Peine Texturizador",
+"Clave" : "REPP-1",
+"Descripcion" : ["Medida estándar","Fabricado en acero","Alta resistencia"],
+"Precio": 999.99,
+"Aplicaciones":["Repuesto para peine texturizador de concreto.","Se adapta a marcas nacionales o importadas"]
+
+},{
+  
+"Nombre" : "Clip para Extensión",
+"Clave" : "CLIPEXT-1",
+"Descripcion" : ["Fabricado acero inoxidable de primera calidad","Vida útil prolongada"],
+"Precio": 999.99,
+"Aplicaciones":["Se utiliza para acoplar extensiones de aluminio.","Se adapta a cualquier diámetro de extensión."]
+
+},{
+  
+"Nombre" : "Llana Manual",
+"Clave" : "MA-LLA24",
+"Descripcion" : ["Fabricado en acero azul alta resistencia","24 pulgadas de largo x 4 pulgadas de ancho","El mango o agarre es diseñado especial para evitar fatiga del usuario y no se gira"],
+"Precio": 999.99,
+"Aplicaciones":["Utilizada principalmente para pulir y detallar pisos de concretos y en estampados."]
+
+},{
+  
+"Nombre" : "Flota Manual Aluminio",
+"Clave" : "MAN-FL16",
+"Descripcion" : ["Fabricadaen aluminio magnesio","16 pulgadas de largo x 3 pulgadas de ancho"],
+"Precio": 999.99,
+"Aplicaciones":["Utilizadas principalmente para alisar y detallar pisos de concreto y en estampados."]
+
+}]

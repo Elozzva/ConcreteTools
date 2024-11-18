@@ -1,0 +1,74 @@
+<div class="jumbotron jumbotron-fluid">
+    <br>
+    <br>
+    <h3 style="text-align: center;">Editar promocion</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+        <a style="padding-bottom: 2%;" href="admin-promociones">
+          <button class="btn btn-secondary">Volver</button>
+        </a>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+              </div>
+              <select [(ngModel)]="Promocion.Tipo"
+                      class="custom-select"
+                      id="inputGroupSelect01">
+                <option selected disabled>Elige una opción</option>
+                <option>Precio</option>
+                <option>Porcentaje</option>
+              </select>
+          </div>
+          <!-- <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Tipo</span>
+              </div>
+              <input [(ngModel)]="Promocion.Tipo" type="text" class="form-control" aria-label="Tipo">
+          </div> -->
+
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Producto</span>
+              </div>
+              <input [(ngModel)]="Promocion.Producto" type="text" class="form-control" placeholder="Producto" aria-label="Producto">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Inicio</span>
+            </div>
+            <input type="text" class="form-control"  [(ngModel)]="Promocion.Inicio">
+
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Fin</span>
+            </div>
+            <input type="text" class="form-control"  [(ngModel)]="Promocion.Fin">
+
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Precio</span>
+            </div>
+            <input [(ngModel)]="Promocion.Precio" type="text" class="form-control" placeholder="Precio" aria-label="precio">
+          </div>
+          <div class="input-group" *ngIf="showPhoto">
+              <button class="btn btn-danger" (click)="eliminarFoto()">x</button>
+              <img src="{{ 'assets/Promociones/'+ Promocion.Clave +'.jpg' }}" style="width: 35%; " alt="">
+
+            </div>
+            <button *ngIf="!showPhoto" class="btn btn-success" (click)="eliminarFoto()"><i>Reestablecer imagen</i></button>
+
+          <div class="input-group mb-3" *ngIf="!showPhoto">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" >
+              <label class="custom-file-label" for="validatedCustomFile">Subir archivo...</label>
+            </div>
+
+          </div>
+          <div class="input-group mb-3">
+            <input class="btn btn-secondary" type="submit" (click)="actualizarPromocion()" value="Actualizar">
+          </div>
+      </div>
+  </div>

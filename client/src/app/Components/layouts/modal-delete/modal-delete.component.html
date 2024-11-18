@@ -1,0 +1,23 @@
+<div class="modal">
+    <div class="modal-content">
+        <div>
+            <button class="close" (click)='closeAdvice($event)'>X</button>
+                <h2 >¿Desea eliminar el registro {{ objeto.Nombre }}?</h2>
+
+            <div class="decideButtons">
+                <button class="confirm" (click)="submit($event)">
+                    Si, eliminar
+                </button>
+                <button class="cancel" (click)='closeAdvice($event)'>No</button>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="toast" [class]="error ? 'snackbarErr' : 'snackbarSuccess'">
+        <ng-container *ngFor="let mensaje of mensajes">
+            <ul>
+                <li>{{ mensaje }}</li>
+            </ul>
+        </ng-container>
+    </div>
+
+</div>

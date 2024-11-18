@@ -1,0 +1,55 @@
+ <div class="modal">
+    <div class="modal-content">
+        <button class="close" (click)="closeAdvice()">X</button>
+        <div>
+            <h2> - </h2>
+        </div>
+        <h3>Fases pendientes de aprobacion:</h3>
+        <div class="doctainer">
+			<div class="card">
+				<div class="head">
+					<h3>Fase: <b>j</b></h3>
+
+					<label for="">Fecha de inicio:</label>
+					<div class="input-container">
+						<i class="material-icons icon">event</i>
+						<input type="date" disabled
+						class="input-field">
+
+					</div>
+
+
+
+					<form>
+					   <div class="form-group">
+						  <label>Nombre de usuario</label>
+						  <input type="text" class="form-control" placeholder="Nombre de usuario">
+					   </div>
+					   <div class="form-group">
+						  <label>Contraseña</label>
+						  <input type="password" class="form-control" placeholder="Contraseña">
+					   </div>
+					   <button type="submit" class="btn btn-black">Regresar</button>
+					   <button type="submit" class="btn btn-secondary">Login</button>
+					</form>
+					<div class="foot">
+						<div class="decideButtons">
+							<button class="confirm" [disabled]="toast" >Aprobar</button>
+							<button class="confirm" [disabled]="toast" >Revision</button>
+
+						</div>
+					</div>
+				</div>
+
+        	</div>
+    	</div>
+    <div *ngIf="toast" [class]="error ? 'snackbarErr' : 'snackbarSuccess'">
+        <ng-container *ngFor="let mensaje of mensajes">
+            <ul>
+                <li>{{ mensaje }}</li>
+            </ul>
+        </ng-container>
+    </div>
+
+</div>
+ </div>

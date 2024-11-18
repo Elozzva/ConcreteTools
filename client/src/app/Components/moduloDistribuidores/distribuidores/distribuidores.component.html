@@ -1,0 +1,39 @@
+<div class="hero-wrap js-fullheight" style="background-image: url('../../../../assets/images/banner_inicio.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate">
+
+          <h2 class="subheading">Leave the house cleaning chores to us</h2>
+          <h1 class="mb-4">Let us do the dirty work, so you don't have to.</h1>
+          <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Learn more <span class="ion-ios-arrow-forward"></span></a></p>
+        </div>
+      </div>
+    </div>
+</div>
+<br>
+<div class="overflow-auto" style="height: 650px; ">
+  <div class="row  mx-auto justify-content-md-center">
+    <h1>DISTRIBUIDORES AUTORIZADOS</h1>
+  </div>
+    <div class="form-group">
+      <select class="form-control" style="max-width: 30%;" name="region" [(ngModel)]="region" id="region" (change)="filterByRegion()">
+        <option [value]="reg"  *ngFor="let reg of regiones" >{{ reg }}</option>
+      </select>
+    </div>
+    <div class="row  mx-auto justify-content-md-center" *ngIf="DistribuidoresFiltered">
+        <div *ngFor="let distribuidor of DistribuidoresFiltered" class="col col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="tarjeta-dist mb-3" >
+                <div class="card-header text-dark">{{ distribuidor.Nombre }}</div>
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="{{ 'assets/Distribuidores/'+ distribuidor.Clave +'.png' }}" class="rounded" style="width: 100px;" alt="{{ distribuidor.Clave }}">
+                  </div>
+                  <!--<h5 class="card-title text-dark ">{{ distribuidor.Clave }}</h5>-->
+                  <h5 class="card-title text-dark">{{ distribuidor.Telefono }}</h5>
+                  <p class="card-text">{{ distribuidor.Direccion }}.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

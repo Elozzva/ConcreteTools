@@ -1,0 +1,50 @@
+@import "../../../../assets//css/animate.css";
+@import "../../../../assets/css/owl.carousel.min.css";
+@import "../../../../assets/css/owl.theme.default.min.css";
+@import "../../../../assets/css/magnific-popup.css";
+@import "../../../../assets/css/flaticon.css";
+@import "../../../../assets/css/style.css";
+
+.portada-desktop{
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1200px;
+    width: auto;
+    background-image: url("../../../../assets/home/home_bg_medium.jpg");
+}
+/* for mobile */
+@media 
+  (max-width: 869px) {
+    .portada-desktop{
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 900px;
+        width: auto;
+        background-image: url("../../../../assets/home/home_bg_mini2.jpg");
+    }
+}
+ /* for tablet */
+@media (min-width: 870px) and (max-width: 1620px){
+    .portada-desktop{
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 1200px;
+        width: auto;
+        background-image: url("../../../../assets/home/home_bg_medium.jpg");
+    }
+}
+
+/* for desktop */
+@media (min-width: 1621px) {
+    .portada-desktop{
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 1900px;
+        width: auto;
+        background-image: url("../../../../assets/home/home_bg.jpg");
+    }
+}

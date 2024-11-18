@@ -1,0 +1,164 @@
+<div class="jumbotron jumbotron-fluid">
+  <br>
+  <br>
+  <h3 style="text-align: center;">Agregar distribuidor</h3>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div> -->
+    <form class="form-group row" style="width: 80%;"  #distribuidorForm="ngForm"  (ngSubmit)="guardar(distribuidorForm)">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Clave</span>
+        </div>
+
+        <input type="text" [ngModel]="Distribuidor.Clave"
+                name="Clave" class="form-control"
+                #Clave="ngModel" [class.is-invalid]="Clave.invalid && Clave.touched"
+                placeholder="Clave del distribuidor"
+                aria-label="Distribuidor"
+                required minlength="5">
+      </div>
+        <small *ngIf="Clave.invalid && Clave.touched" class="form-text text-danger mb-3">La clave del distribuidor debe ser obligatorio y contener al menos 5 letras</small>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Nombre</span>
+          </div>
+
+          <input type="text" [ngModel]="Distribuidor.Nombre"
+                  name="Nombre" class="form-control"
+                  #nombre="ngModel" [class.is-invalid]="nombre.invalid && nombre.touched"
+                  placeholder="Nombre del distribuidor"
+                  aria-label="Distribuidor"
+                  required minlength="5">
+          </div>
+          <small *ngIf="nombre.invalid && nombre.touched" class="form-text text-danger mb-3">El nombre del distribuidor debe ser obligatorio y contener al menos 5 letras</small>
+
+      <div class="input-group mb-3" action="15-html5-tel-input-demo2.php">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Telefóno</span>
+          </div>
+          <input type="text" [ngModel]="Distribuidor.Telefono"
+          name="Telefono" class="form-control"
+          #Telefono="ngModel" [class.is-invalid]="Telefono.invalid && Telefono.touched"
+          placeholder="Telefóno del distribuidor"
+          aria-label="Telefóno"
+          pattern="[0-9]{10}">
+  </div>
+  <small *ngIf="Telefono.invalid && Telefono.touched" class="form-text text-danger mb-3">El telefóno contener 10 numeros</small>
+
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">E-mail</span>
+        </div>
+        <input type="text" [ngModel]="Distribuidor.email"
+              name="Email" class="form-control"
+              #Email="ngModel" [class.is-invalid]="Email.invalid && Email.touched"
+              placeholder="E-mail del distribuidor"
+              aria-label="Email"
+              pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+  </div>
+  <small *ngIf="Email.invalid && Email.touched" class="form-text text-danger mb-3">El E-mail debe ser obligatorio y escrito con formato de e-mail</small>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Dirección</span>
+    </div>
+    <input type="text" [ngModel]="Distribuidor.Direccion"
+           name="Direccion" class="form-control"
+           #Direccion="ngModel" [class.is-invalid]="Direccion.invalid && Direccion.touched"
+           placeholder="Dirección del distribuidor"
+           aria-label="Direccion"
+           required minlength="5">
+  </div>
+  <small *ngIf="Direccion.invalid && Direccion.touched" class="form-text text-danger mb-3">La Dirección del distribuidor debe ser obligatoria</small>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Estado</span>
+    </div>
+    <select [(ngModel)]="Distribuidor.Estado"
+      name="Estado" class="form-control"
+      #Estado="ngModel" [class.is-invalid]="Estado.invalid && Estado.touched"
+      required minlength="5">
+      <option disabled selected>Elige una opción</option>
+      <option>AGUASCALIENTES</option>
+      <option>BAJA CALIFORNIA</option>
+      <option>BAJA CALIFORNIA SUR</option>
+      <option>CAMPECHE</option>
+      <option>CHIAPAS</option>
+      <option>CHIHUAHUA</option>
+      <option>CIUDAD DE MÉXICO</option>
+      <option>COAHUILA</option>
+      <option>COLIMA</option>
+      <option>DURANGO</option>
+      <option>GUANAJUATO</option>
+      <option>GUERRERO</option>
+      <option>HIDALGO</option>
+      <option>JALISCO</option>
+      <option>EDO MÉXICO</option>
+      <option>MICHOACÁN</option>
+      <option>MORELOS</option>
+      <option>NAYARIT</option>
+      <option>NUEVO LEÓN</option>
+      <option>OAXACA</option>
+      <option>PUEBLA</option>
+      <option>QUERÉTARO</option>
+      <option>QUINTANA ROO</option>
+      <option>SAN LUIS POTOSÍ</option>
+      <option>SINALOA</option>
+      <option>SONORA</option>
+      <option>TABASCO</option>
+      <option>TAMAULIPAS</option>
+      <option>TLAXCALA</option>
+      <option>VERACRUZ</option>
+      <option>YUCATÁN</option>
+      <option>ZACATECAS</option>
+    </select>
+  </div>
+  <small *ngIf="Estado.invalid && Estado.touched" class="form-text text-danger mb-3">Se debe elegir el Estado de residencia del distribuidor de manera obligatoria</small>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Región</span>
+        </div>
+        <select [(ngModel)]="Distribuidor.Region"
+              name="Region" class="form-control"
+              #Region="ngModel" [class.is-invalid]="Region.invalid && Region.touched"
+              required minlength="5">
+              <option disabled selected>Elige una opción</option>
+              <option>NORTE</option>
+              <option>CENTRO</option>
+              <option>SUR</option>
+        </select>
+</div>
+<small *ngIf="Region.invalid && Region.touched" class="form-text text-danger mb-3">Se debe elegir la Región del distribuidor de manera obligatoria</small>
+
+      <div class="input-group mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="validatedCustomFile" >
+          <label class="custom-file-label" for="validatedCustomFile">Subir archivo...</label>
+        </div>
+
+      </div>
+      <div class="input-group mb-3">
+        <a class="float btn btn-dark" href="admin-distribuidores-autorizados">
+          Volver
+        </a>
+        <input class="btn btn-secondary" type="submit" value="Guardar">
+      </div>
+    </form>
+  </div>
+</div>

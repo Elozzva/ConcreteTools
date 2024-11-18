@@ -1,0 +1,13 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container justify-content-md-center">
+      <br>
+      <br>
+      <br>
+      <h1 class="display-4">Promociones</h1>
+      <p class="lead">Gestión de promociones</p>
+      <!-- <button type="button" (click)="newProducto()" class="btn btn-success float-right">Nuevo</button> -->
+    </div>
+</div>
+<ul>
+    <li *ngFor="let promocion of Promociones"> {{ promocion.Tipo }} - {{ promocion.Producto }} </li>
+</ul>

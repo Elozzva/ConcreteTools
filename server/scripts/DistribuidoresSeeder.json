@@ -1,0 +1,184 @@
+[{
+    "Nombre" : "Grupo Ferretero Angsa S A P I de C.V.",
+    "Clave" : "Dist001",
+    "Telefono" : "7711470497",
+    "email": "gpo.anglo@gmail.com",
+    "Direccion":"CALLE NEVADO DE COLIMA, 102, SAN CAYETANO, 13048, PACHUCA DE SOTO, HIDALGO MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "DISTRIBUIDORA ARGMONS S.A. DE C.V.",
+    "Clave" : "Dist002",
+    "Telefono" : "7717193839",
+    "email": "compras@argmons.com.mx",
+    "Direccion":"BOULEVAR RAMON G. BONFIL No. 312 COL. PLUTARCO ELIAS CALLES C.P. 4035 PACHUCA HIDALGO MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "JVRENTA",
+    "Clave" : "Dist003",
+    "Telefono" : "7717100346",
+    "email": "jvrenta_servicios@hotmail.com",
+    "Direccion":"CARR. PACHUCA ACTOPAN KM 6.5, S/N, LA LOMA, 13052, PACHUCA, SAN AGUSTIN TLAXIACA, HIDALGO, MEXICO.",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "ESTAMPADOS EN CONCRETO HIDALGO ROTEC PACHUCA",
+    "Clave" : "Dist004",
+    "Telefono" : "7712540616",
+    "email": "mhac_edifica@hotmail.com",
+    "Direccion":"BOULEVAR RAMON G. BONFIL, JOSE ANTONIO TELLERIA BELTLAN 76, COL. SAN PEDRO NOPALCALCO, 42084, HIDALGO MEXICO",
+    "Region":"CENTRO"
+},{
+    "Nombre" : "MATERIALES SAN ANTONIO",
+    "Clave" : "Dist005",
+    "Telefono" : "7717110732",
+    "email": "email@email.com",
+    "Direccion":"CARRETERA MEXICO PACHUCA KM 81.5, COLONIA SAN ANTONIO DEL DESMONTE, 42111 PACHUCA DE SOTO, HIDALGO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "CERON HERRAMIENTAS DE HIDALGO SA DE CV",
+    "Clave" : "Dist006",
+    "Telefono" : "7737322483 & 7731002783",
+    "email": "ceronhta@prodigy.net.mx",
+    "Direccion":" CARRETERA TULA ACTOPAN 7, COL. CENTRO, 42800, TULA DE ALLENDE, HIDALGO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "HERCAVSA",
+    "Clave" : "Dist007",
+    "Telefono" : "7714281551",
+    "email": "hercavsa@gmail.com",
+    "Direccion":"BLVD. FELIPE ANGELES 2014, COL.CARLOS ROVIROSA, 42082, PACHUCA, HIDALGO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist008",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"INDEPENDENCIA 200 COL. BENITO JUAREZ, 42500, ACTOPAN, HIDALGO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "JILOTEPEC",
+    "Clave" : "Dist009",
+    "Telefono" : "",
+    "email": "alvarito_santiago1@hotmail.com",
+    "Direccion":"AVENIDA ANDRES MOLINA ENRIQUEZ 149 CENTRO, 54240, JILOTEPEC DE MEDINA, ESTADO DE MEXICO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "ARTICULOS FERRETEROS Y MATERIALES PARA CONSTRUCCION ARFYMCSA",
+    "Clave" : "Dist010",
+    "Telefono" : "(728) 287-04-80, 287-02-97  &  800-400-7622",
+    "email": "arfymcsa@yayoo.com.mx",
+    "Direccion":"AVENIDA JUAREZ, 551, BARRIO LA CONCEPCION, 52100, SAN MATEO ATENCO, ATENCO, ESTADO DE MEXICO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "COMINSUR",
+    "Clave" : "Dist011",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":" PERIFERICO ARCO NORTE, CARLOS PELLICER CAMARA S/N COL. JOSE MARIA PINO SUAREZ, 86220, VILLAHERMOSA, TABASCO, MEXICO",
+    "Región":"SUR"
+},{
+    "Nombre" : "SERVICIOS INTEGRALES PARA LA CONSTRUCCION SIC TAP",
+    "Clave" : "Dist012",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"CALLE MANGOS MZ 24 LT 15 ENTRE ROSAS Y NARANJOS FRACC. LOS LAURELES, 30780, TAPACHULA CHIAPAS, MEXICO",
+    "Región":"SUR"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist013",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist014",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist015",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "MATERIALES Y OBRAS DE GUERRERO",
+    "Clave" : "Dist016",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"GALEANA ESQUINA DR ALARCON, 28, CENTRO, 39200, AYUTLA, AYUTLA DE LOS LIBRES, GUERRERO, MEXICO",
+    "Región":"SUR"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist017",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"ALVARO OBREGON, ESQ. ALVARO OBREGON, No. 69, COL. SANTIAGO DE LA PEÑA, 92770, TUXPAN, VERACRUZ, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "CONSTRUCCIONES, PAVIMENTOS Y COMERCIO JASARAMU, S.A. DE C.V.",
+    "Clave" : "Dist018",
+    "Telefono" : "7471373888",
+    "email": "chayo_contabilidad@hotmail.com",
+    "Direccion":"NUMERO 3 No. 60 COL. VILLA MODERNA C.P. 39074 CHILPANCINGO DE LOS BRAVO, GUERRERO, MEXICO",
+    "Región":"SUR"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist019",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":"",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "LA FLOTA HERRAMIENTAS",
+    "Clave" : "Dist020",
+    "Telefono" : "55 5362 9485",
+    "email": "http://www.laflotaherramientas.com/",
+    "Direccion":"",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist021",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":" EUTIMIO PINZON No.42 COL. MOCTEZUMA, 39020, CHILPANCINGO DE LOS BRAVO, GUERRERO, MEXICO",
+    "Región":"SUR"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist022",
+    "Telefono" : "",
+    "email": "",
+    "Direccion":" BLVD LAZARO CARDENAS SUR 374 COL. CENTRO, 59000, SAHUAYO DE MORELOS, MICHOACAN, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "RINO EN CONCRETO",
+    "Clave" : "Dist023",
+    "Telefono" : "722 706 2601",
+    "email": "cecsa04@gmail.com",
+    "Direccion":"PLAN DE AGUA PRIETA #206 COL. LA MAGDALENA, 50010, TOLUCA, EDO. DE MEXICO, MEXICO",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "MAQUINARIA ADONAI",
+    "Clave" : "Dist024",
+    "Telefono" : "7471250788",
+    "email": "salvadorramirez7700@gmail.com",
+    "Direccion":"COL. LA OBRERA, CALLE JAIME NUNO, CHILPANCINGO DE LOS BRAVO, GUERRERO, MEXICO ",
+    "Región":"SUR"
+},{
+    "Nombre" : "FERRETERIA IMPERIO, SA DE CV",
+    "Clave" : "Dist025",
+    "Telefono" : "9222416237",
+    "email": "ferreteria_imperio@hotmail.com",
+    "Direccion":"BOULEVARD TECNOLOGICO MZA.33 COL. MEXICO MINATITLAN, VER., 96817",
+    "Región":"CENTRO"
+},{
+    "Nombre" : "",
+    "Clave" : "Dist026",
+    "Telefono" : "9211242382",
+    "email": "coatza1@ferreteriaimperio.com",
+    "Direccion":"AV. TRANSÍSTMICA 1125, COL. LÁZARO CÁRDENAS, C.P. 96460, COATZACOALCOS, VERACRUZ.",
+    "Región":"CENTRO"
+}
+]
