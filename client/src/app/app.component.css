@@ -1,0 +1,46 @@
+.tarjeta {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+.tarjeta-producto {
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.precio {
+    font-size: 15rem;
+}
+.contorno {
+    border-color: #444;
+    border: 2px !important;
+}
+.imagen-producto {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 4px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.mayusculas {
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444;
+}

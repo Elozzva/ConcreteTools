@@ -1,0 +1,129 @@
+<div class="jumbotron jumbotron-fluid">
+    <br>
+    <br>
+    <h3 style="text-align: center;">Editar distribuidor</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+        <a style="padding-bottom: 2%;" href="admin-distribuidores-autorizados">
+          <button class="btn btn-secondary">Volver</button>
+        </a>
+          <!-- <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div> -->
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Clave</span>
+            </div>
+            <input [(ngModel)]="Distribuidor.Clave" type="text" class="form-control" placeholder="Clave" aria-label="Clave">
+        </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Nombre</span>
+            </div>
+            <input [(ngModel)]="Distribuidor.Nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        </div>
+
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Telefóno</span>
+              </div>
+              <input [(ngModel)]="Distribuidor.Telefono" type="text" class="form-control" placeholder="Telefóno" aria-label="Telefóno">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Dirección</span>
+            </div>
+            <input type="text" class="form-control"  placeholder="Dirección" [(ngModel)]="Distribuidor.Direccion">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">E-Mail</span>
+            </div>
+            <input type="text" class="form-control" placeholder="E-Mail" [(ngModel)]="Distribuidor.email">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Estado</span>
+            </div>
+            <select [(ngModel)]="Distribuidor.Estado"
+              name="Estado" class="form-control"
+              #Estado="ngModel" [class.is-invalid]="Estado.invalid && Estado.touched"
+              required minlength="5">
+              <option disabled selected>Elige una opción</option>
+              <option>AGUASCALIENTES</option>
+              <option>BAJA CALIFORNIA</option>
+              <option>BAJA CALIFORNIA SUR</option>
+              <option>CAMPECHE</option>
+              <option>CHIAPAS</option>
+              <option>CHIHUAHUA</option>
+              <option>CIUDAD DE MÉXICO</option>
+              <option>COAHUILA</option>
+              <option>COLIMA</option>
+              <option>DURANGO</option>
+              <option>GUANAJUATO</option>
+              <option>GUERRERO</option>
+              <option>HIDALGO</option>
+              <option>JALISCO</option>
+              <option>EDO MÉXICO</option>
+              <option>MICHOACÁN</option>
+              <option>MORELOS</option>
+              <option>NAYARIT</option>
+              <option>NUEVO LEÓN</option>
+              <option>OAXACA</option>
+              <option>PUEBLA</option>
+              <option>QUERÉTARO</option>
+              <option>QUINTANA ROO</option>
+              <option>SAN LUIS POTOSÍ</option>
+              <option>SINALOA</option>
+              <option>SONORA</option>
+              <option>TABASCO</option>
+              <option>TAMAULIPAS</option>
+              <option>TLAXCALA</option>
+              <option>VERACRUZ</option>
+              <option>YUCATÁN</option>
+              <option>ZACATECAS</option>
+            </select>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Región</span>
+            </div>
+            <select [(ngModel)]="Distribuidor.Region"
+              name="Region" class="form-control"
+              #Region="ngModel" [class.is-invalid]="Region.invalid && Region.touched"
+              required minlength="5">
+              <option disabled selected>Elige una opción</option>
+              <option>NORTE</option>
+              <option>CENTRO</option>
+              <option>SUR</option>
+            </select>
+          </div>
+          <div class="input-group" *ngIf="showPhoto">
+              <button class="btn btn-danger" (click)="eliminarFoto()">x</button>
+              <img src="{{ 'assets/Distribuidores/'+ Distribuidor.Clave +'.png' }}" style="width: 35%; " alt="">
+
+            </div>
+            <button *ngIf="!showPhoto" class="btn btn-success" (click)="eliminarFoto()"><i>Reestablecer imagen</i></button>
+
+          <div class="input-group mb-3" *ngIf="!showPhoto">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" >
+              <label class="custom-file-label" for="validatedCustomFile">Subir archivo...</label>
+            </div>
+
+          </div>
+          <div class="input-group mb-3">
+            <input class="btn btn-secondary" type="submit" (click)="actualizarDistribuidor()" value="Actualizar">
+          </div>
+      </div>
+  </div>

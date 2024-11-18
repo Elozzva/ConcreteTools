@@ -1,0 +1,115 @@
+<div class="jumbotron jumbotron-fluid">
+  <br>
+  <br>
+  <h3 style="text-align: center;">Crear promoción</h3>
+</div>
+<div class="container">
+    <div class="row">
+        <!-- <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div> -->
+    <form class="form-group row" style="width: 80%;" #prodmocionForm="ngForm" (ngSubmit)="guardar(prodmocionForm)">
+      <!-- <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+        </div>
+        <select [ngModel]="Promocion.Tipo" class="custom-select" id="inputGroupSelect01">
+          <option selected disabled>Elige una opción</option>
+          <option>Precio</option>
+          <option>Porcentaje</option>
+        </select>
+      </div>   -->
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Tipo</span>
+          </div>
+          <select [(ngModel)]="Promocion.Tipo"
+                  name="Tipo" class="form-control"
+                  #Tipo="ngModel" [class.is-invalid]="Tipo.invalid && Tipo.touched"
+                  required minlength="5">
+              <option disabled selected>Elige una opción</option>
+              <option>Precio</option>
+              <option>Porcentaje</option>
+          </select>
+      </div>
+      <small *ngIf="Tipo.invalid && Tipo.touched" class="form-text text-danger mb-3">El Tipo debe ser obligatorio y contener al menos 5 letras</small>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Producto</span>
+          </div>
+          <input type="text" [ngModel]="Promocion.Producto"
+                  name="Producto" class="form-control"
+                  #Producto="ngModel" [class.is-invalid]="Producto.invalid && Producto.touched"
+                  placeholder="Producto de la promoción"
+                  aria-label="Producto"
+                  required minlength="5">
+      </div>
+      <small *ngIf="Producto.invalid && Producto.touched" class="form-text text-danger mb-3">El Producto debe ser obligatorio y contener al menos 5 letras</small>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Fecha inicial</span>
+        </div>
+        <input type="date" [ngModel]="Promocion.Inicio"
+                  name="Inicio" class="form-control"
+                  #Inicio="ngModel" [class.is-invalid]="Inicio.invalid && Inicio.touched"
+                  placeholder="Inicio de la promoción"
+                  aria-label="Inicio"
+                  required minlength="5">
+      <!--</div>-->
+      <small *ngIf="Inicio.invalid && Inicio.touched" class="form-text text-danger mb-3">La fecha inicial debe ser obligatorio y contener al menos 5 letras</small>
+
+      <!--<div class="input-group mb-3">-->
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Fecha final</span>
+        </div>
+        <input type="date" [ngModel]="Promocion.Fin"
+                  name="Fin" class="form-control"
+                  #Fin="ngModel" [class.is-invalid]="Fin.invalid && Fin.touched"
+                  placeholder="Fin de la promoción"
+                  aria-label="Fin"
+                  required minlength="5">
+      </div>
+      <small *ngIf="Fin.invalid && Fin.touched" class="form-text text-danger mb-3">La fecha final debe ser obligatorio y contener al menos 5 letras</small>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Precio</span>
+        </div>
+        <input type="number" [ngModel]="Promocion.Precio"
+                  name="Precio" class="form-control"
+                  step="0.01"
+                  min="0"
+                  #Precio="ngModel"
+                  [class.is-invalid]="Precio.invalid && Precio.touched"
+                  placeholder="Precio de la promoción"
+                  aria-label="Precio"
+                  required minlength="1">
+      </div>
+      <small *ngIf="Precio.invalid && Precio.touched" class="form-text text-danger mb-3">El Precio debe ser obligatorio y mayor a 0</small>
+
+      <div class="input-group mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="validatedCustomFile" >
+          <label class="custom-file-label" for="validatedCustomFile">Subir archivo...</label>
+        </div>
+
+      </div>
+      <div class="input-group mb-3">
+        <a class="float btn btn-dark" href="admin-promociones">
+          Volver
+        </a>
+        <input class="btn btn-secondary" type="submit" value="Guardar">
+      </div>
+    </form>
+  </div>
+</div>

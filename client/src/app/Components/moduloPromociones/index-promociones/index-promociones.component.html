@@ -1,0 +1,61 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container justify-content-md-center">
+      <br>
+      <br>
+      <br>
+      <h1 class="display-4">Promociones</h1>
+      <p class="lead">Gestión de promociones</p>
+      <button type="button" (click)="newPromocion()" class="btn btn-success float-right" data-toggle="modal" data-target="#exampleModalCenter">
+        Nueva Promoción
+      </button>
+      <!-- <button type="button" (click)="newPromocion()" class="btn btn-success float-right">Nuevo</button> -->
+    </div>
+</div>
+<!--app-create-promocion *ngIf="modalCreate">
+</app-create-promocion-->
+<div class="container overflow-auto"  style="height: 650px;">
+    <div class="row justify-content-md-center">
+        <table class="table table-hover" data-sticky-header="true">
+            <thead class="thead-dark" >
+              <tr >
+                <th scope="col">Tipo</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Inicio</th>
+                <th scope="col">Fin</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Operaciones</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                <ng-container *ngFor="let promocion of Promociones">
+                    <tr>
+                      <th scope="row"> {{ promocion.Tipo }} </th>
+                      <td>{{ promocion.Producto }}</td>
+                      <td>{{ promocion.Inicio | date: 'dd-MM-YYYY' }}</td>
+                      <td>{{ promocion.Fin | date: 'dd-MM-YYYY'}}</td>
+                      <td>
+                        <ng-container *ngIf="promocion.Precio">
+                          {{ promocion.Precio | number }}
+                        </ng-container>
+                        <ng-container *ngIf="!promocion.Precio">
+                          N / A
+                        </ng-container>
+
+                      </td>
+                      <td>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <ng-container *ngIf="promocion._id">
+                              <button type="button" (click)="edit(promocion._id)" class="btn btn-primary">Editar</button>
+                              <button type="button" (click)="delete(promocion._id)" class="btn btn-danger">Eliminar</button>
+                            </ng-container>
+                        </div>
+                    </td>
+                    </tr>
+                </ng-container>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

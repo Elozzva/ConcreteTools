@@ -1,0 +1,51 @@
+<div class="hero-wrap js-fullheight" style="background-image: url('../../../../assets/images/banner_inicio.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+        <div class="col-md-6 ftco-animate">
+
+          <h2 class="subheading">Leave the house cleaning chores to us</h2>
+          <h1 class="mb-4">Let us do the dirty work, so you don't have to.</h1>
+          <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Learn more <span class="ion-ios-arrow-forward"></span></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="overflow-auto" style="height: 550px; ">
+    <div class="row mx-auto" *ngIf="Productos">
+      <div *ngFor="let producto of Productos" class="col col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="tarjeta text-dark mb-3" (click)="openProducto(producto._id)">
+            <div class="card-header text-dark mayusculas">{{ producto.Nombre }}</div>
+            <div class="card-body">
+              <div class="text-center">
+                <img src="{{ 'assets/Productos/'+ producto.Clave +'.jpg' }}" class="rounded" style="width: 350px;" alt="{{ producto.Nombre }}">
+              </div>
+              <!--<h5 class="card-title text-dark">{{ producto.Clave }}</h5>-->
+              <h5 class="card-title text-dark">{{ producto.Precio | currency : 'MXN' : 'symbol-narrow' : '1.2-2'}} <span>MX</span></h5>
+              <p class="card-text">{{ producto.Descripcion }}.</p>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+ <!--  <div class="container overflow-auto" style="height: 650px; ">
+
+      <div class="row justify-content-md-center" >
+          <div *ngFor="let producto of Productos" class="col col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="tarjeta text-dark mb-3" style="max-width: 18rem; ">
+                <div class="card-header text-dark mayusculas">{{ producto.Nombre }}</div>
+                <div class="card-body">
+                  <div class="text-center">
+                    <img src="{{ 'assets/Productos/'+ producto.Clave +'.jpg' }}" class="rounded" style="width: 230px;" alt="{{ producto.Nombre }}">
+                  </div>
+                  <h5 class="card-title text-dark">{{ producto.Clave }}</h5>
+                  <h5 class="card-title text-dark">{{ producto.Precio | currency : 'MXN' : 'symbol-narrow' : '1.2-2'}}</h5>
+                  <p class="card-text">{{ producto.Descripcion }}.</p>
+
+                </div>
+              </div>
+          </div>
+      </div>
+  </div> -->

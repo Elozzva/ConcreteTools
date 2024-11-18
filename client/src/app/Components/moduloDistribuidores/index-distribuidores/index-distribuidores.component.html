@@ -1,0 +1,88 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container justify-content-md-center">
+      <br>
+      <br>
+      <br>
+      <h1 class="display-4">Distribuidores</h1>
+      <p class="lead">Gestión de distribuidores autorizados</p>
+      <button type="button" (click)="newDistribuidor()" class="btn btn-success float-right" data-toggle="modal" data-target="#exampleModalCenter">
+        Nuevo Distribuidor
+      </button>
+      <!-- <button type="button" (click)="newdistribuidor()" class="btn btn-success float-right">Nuevo</button> -->
+    </div>
+</div>
+<div class="container ">
+
+  <div class="form-group col-md-4  float-right">
+    <input type="text" class="form-control" name="inputSearch" #inputSearch aria-describedby="helpId" (keyup)="search(inputSearch.value)" placeholder="Búsqueda">
+  </div>
+  <div class="container overflow-auto"  style="height: 650px;">
+      <div class="row justify-content-md-center">
+          <table class="table table-hover" data-sticky-header="true">
+              <thead class="thead-dark" >
+                <tr >
+
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Telefono</th>
+                  <th scope="col">E-Mail</th>
+                  <th scope="col">Dirección</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Región</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <ng-container *ngIf="!isSearching"></ng-container>
+                  <ng-container *ngFor="let distribuidor of Distribuidores" >
+                      <tr>
+                        <th scope="row"> {{ distribuidor.Nombre }} </th>
+
+                        <td>{{ distribuidor.Telefono }}</td>
+                        <td>{{ distribuidor.email }}</td>
+                        <td>{{ distribuidor.Direccion }}</td>
+                        <td>{{ distribuidor.Estado }}</td>
+                        <td>{{ distribuidor.Region }}</td>
+                        <td>
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <ng-container *ngIf="distribuidor._id">
+                              <button type="button" (click)="edit(distribuidor._id)" class="btn btn-primary">Editar</button>
+                              <button type="button" (click)="delete(distribuidor._id)" class="btn btn-danger">Eliminar</button>
+                          </ng-container>
+                          </div>
+                      </td>
+                      </tr>
+                  </ng-container>
+
+                <ng-container *ngIf="isSearching">
+                  <ng-container *ngFor="let distribuidor of DistribuidoresFiltered" >
+                      <tr>
+                        <th scope="row"> {{ distribuidor.Nombre }} </th>
+
+                        <td>{{ distribuidor.Telefono }}</td>
+                        <td>{{ distribuidor.email }}</td>
+                        <td>{{ distribuidor.Direccion }}</td>
+                        <td>{{ distribuidor.Estado }}</td>
+                        <td>{{ distribuidor.Region }}</td>
+                        <td>
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <ng-container *ngIf="distribuidor._id">
+                              <button type="button" (click)="edit(distribuidor._id)" class="btn btn-primary">Editar</button>
+                              <button type="button" (click)="delete(distribuidor._id)" class="btn btn-danger">Eliminar</button>
+                          </ng-container>
+                          </div>
+                      </td>
+                      </tr>
+                  </ng-container>
+                </ng-container>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+
+<app-modal-delete *ngIf="openModalDeleteBool"
+    [updateAll]="getDistribuidores"
+    [openDeleteModal]="openModalDelete"
+    [objToDelete]="distribuidorToDelete"
+    [url]="URL"
+></app-modal-delete>
